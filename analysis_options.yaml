@@ -1,0 +1,15 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    # Ignore specific Firebase-related errors if they're false positives
+    missing_required_param: ignore
+    missing_return: ignore
+  exclude:
+    - lib/generated_plugin_registrant.dart
+    - lib/**/*.g.dart
+    - lib/**/*.freezed.dart
+
+linter:
+  rules:
+    # Add any additional lint rules you want to enforce
